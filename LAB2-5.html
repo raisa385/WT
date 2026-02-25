@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Academic Portfolio</title>
+        <meta name="description" content="My academic portfolio">
+        <meta name="keywords" content="academic, portfolio">
+        <meta name="Author" content="Raisa A.">
+    </head>
+    <!------------------------------------------------------------->
+    <body>
+        <br><h1><strong>RAISA A.</strong></h1>
+        <hr>
+        <nav>
+            <a href="#biography">Biography</a> |
+            <a href="#education">Education</a> |
+            <a href="#contactForm">Contact Form</a> |
+            <a href="#contactInfo">Contact Info</a> |
+        </nav>
+        <hr><!------------------------------------->
+        <main>
+            <section>
+                <h2 id="biography">Biography</h2>
+                <p>
+                    Raisa A. is a third-year CSE student at AIUB. Their academic interests
+                    center on IoT systems and deep learning, specifically CNN and computer vision 
+                    application in the medical field.
+                </p>
+            </section>
+            <hr><!------------------------------------->
+            <section>
+                <h2 id="education">Education</h2><br>
+                <table border="1">
+                    <caption>Education Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BSc. in CSE</td>
+                            <td>AIUB</td>
+                            <td>2023</td>
+                            <td>TBA</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </section>
+            <hr><!------------------------------------->
+            <section>
+                <h2 id="contactForm">Contact Me</h2>
+                <form action="#" method="post"></form>
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe"><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g. johnD@gmail.com"><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[-\s\.][0-9]{3}[-\s\.][0-9]{4}"><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea maxlength="200" required></textarea><br><br>
+                </fieldset>
+                <button type="Send">Submit</button>
+            </section>
+            <hr>
+        </main>
+        
+        <footer id="contactInfo">
+            <p>&copy; 2026 Raisa A. All rights reserved.</p>
+            <p>Contact me: raisaA@gmail.com</p>
+        </footer>
+    </body>
+ </html>
