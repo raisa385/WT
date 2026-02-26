@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPT PRACTICE</title>
+</head>
+<body>
+ 
+<h2>Check Browser Console Output for</h2>
+<ul>
+    <li>Printing on console output</li>
+    <li>Variable declaration & assignment</li>
+    <li>Simple arithmetic</li>
+    <li>Checking odd or even</li>
+    <li>Temperature conversion</li>
+    <li>Simple calculator</li>
+    <li>Finding largest number</li>
+    <li>Looping through numbers 1-10</li>
+    <li>Factorial of 5</li>
+    <li>String reversal</li>
+    <li>Sum of array elements</li>
+    <li>Array manipulation</li>
+    <li>Simple object example</li>
+</ul>
+ 
+<script>
+    //printing msg
+    console.log("Hello World!");
+    //variable declaration & assignment
+    var name="Raisa";
+    var department ="CSE";
+    console.log("My Name is "+name+" and I'm from the "+department+" department.\n");
+    //Simple Arithmetic
+    console.log("--SIMPLE ARITHMETIC------------------------------------");
+    var num1 = 5;
+    var num2 = 10;
+    console.log("number 1= "+num1+", number 2= "+num2);
+    var sum = num1 + num2;
+    var diff = num2 - num1;
+    var mul = num1 * num2;
+    var div = num1 / num2;
+    console.log("SUM= "+sum+"\nDIFF= "+diff+"\nMUL= "+mul+"\nDIV= "+div);
+
+    //checking odd or even
+    console.log("--ODD OR EVEN------------------------------------");
+    var number = 7;
+    if (number % 2 === 0) {
+    console.log(number + " is even.");
+    } else {
+    console.log(number + " is odd.");
+    }
+
+    //temperature Conversion
+    console.log("--TEMPERATURE CONVERSION------------------------------------");
+    var celsius = 25;
+    var fahrenheit = (celsius * 9/5) + 32;
+    console.log(celsius + "°C is equal to " + fahrenheit + "°F");
+
+    //simple calculator
+    console.log("--SIMPLE CALCULATOR------------------------------------");
+    console.log("number 1= "+num1+", number 2= "+num2);
+    console.log("Addition: " + (num1 + num2));
+    console.log("Subtraction: " + (num1 - num2));
+    console.log("Multiplication: " + (num1 * num2));
+    console.log("Division: " + (num1 / num2));
+
+    //finding largest number
+    console.log("--FINDING LARGEST NUMBER------------------------------------");
+    var n1 = 15;
+    var n2 = 22;
+    var n3 = 8;
+    var largest = n1;
+    if(n2>n1){largest = n2;}
+    if(n3>largest){largest=n3;}
+    console.log("The largest number among "+n1+","+n2+" and "+n3+" is "+largest);
+
+    //looping through numbers 1-10
+    console.log("--LOOPING THROUGH NUMBERS 1-10------------------------------------");
+    for(var i=1;i<=10;i++){console.log(i+"\n");}
+
+    //factorial
+    console.log("--FACTORIAL OF 5---------------------------------");
+    var num = 5;
+    var factorial = 1;
+    for(var i = num; i > 0; i--){factorial *= i;}
+    console.log("Factorial of " + num + " is: " + factorial);
+
+    //String reversal
+    console.log("--REVERSE OF STRING-------------------");
+    var original = "JAVASCRIPT";
+    var reverse = "";
+    for(var i = original.length - 1; i >= 0; i--){reverse += original[i];}
+    console.log("ORIGINAL STRING: "+original);
+    console.log("REVERSED STRING: "+reverse);
+
+    //sum of array elements
+    console.log("--SUM OF ARRAY ELEMENTS-------------------");
+    var arr1=[1,2,3,4,5];
+    var sum=0;
+    for(var i=0;i<arr1.length;i++){sum+=arr1[i];}
+
+    console.log("ARRAY ELEMENTS: ");
+    for(var i=0;i<arr1.length;i++){console.log(arr1[i]);}
+    console.log("ARRAY ELEMENTS SUM: "+sum);
+
+    //Array manipulation
+    console.log("--ARRAY MANIPULATION-------------------");
+    console.log("ELEMENTS BEFORE MANIPULATION: ");
+    for(var i=0;i<arr1.length;i++){console.log(arr1[i]);}
+    arr1.push(6); //appends 6 to array
+    arr1.shift(); //removes first element
+    console.log("ELEMENTS AFTER MANIPULATION: ");
+    for(var i=0;i<arr1.length;i++){console.log(arr1[i]);}
+
+    //simple object example
+    console.log("--SIMPLE OBJECT EXAMPLE-------------------");
+    var student={
+        name: "Alice",
+        mark: 15
+    };
+
+    console.log("Student name: "+student.name);
+    console.log("Marks attained: "+student.mark);
+</script>
+
+</body>
+</html>
