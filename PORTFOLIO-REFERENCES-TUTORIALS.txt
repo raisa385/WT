@@ -1,0 +1,5 @@
+[1] https://www.w3schools.com/
+[2] https://www.youtube.com/watch?v=Slxdo0Dqxlk
+[3] https://www.youtube.com/watch?v=TIo8ADGkL00
+[4] https://fontawesome.com/
+[5] Gemini (setTimeout and fixing errors)

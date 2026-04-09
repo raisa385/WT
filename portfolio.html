@@ -1,0 +1,136 @@
+ <!--[1,2]-->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <meta name="description" content="portfolio">
+        <meta name="keywords" content="website, portfolio">
+        <meta name="Author" content="Raisa A.">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <!--for icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--incase it stops updating: <link rel="stylesheet" href="style.css?v=1.1">-->
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="left">
+                <a href="/">Raisa Rastinah Anwar</a>
+            </div>
+
+            <div class="right">
+                 <a href="https://github.com/raisa385" target="_blank">
+                   <i class="fa-brands fa-github"></i>
+                   <span>GitHub</span>
+                 </a>
+
+                 <a href="mailto:rr.anwar385@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                 </a>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="home">
+
+                <div class="text">
+                    <h2>Hi, I'm Raisa</h2>
+                    <p>
+                        Aspiring game developer with a knack for C# and Unity.
+                        Dedicated to building worlds were stories meet code.
+                    </p>
+
+                    <div class="links">
+
+                        <a href="#projects">
+                            <span>Projects</span>
+                            <i class="fa-solid fa-folder"></i>
+                        </a>
+
+                         <a href="#contact">
+                            <span>Contact</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="profile.jpeg" alt="A picture of me">
+                </div>
+
+            </section>
+
+            <section id="projects" class="project">
+                <h1 id="project-title">Projects</h1>
+                <p id="project-subtext">Check out my Github for the project files. Please don't, this is fictional except for my pixel arts.</p>
+                <div class="container">
+
+                    <div class="card">
+                        <img src="game.webp">
+                        <div class="card-text">
+                            <h2>Midnight Forest</h2>
+                            <p>
+                                A 2D pixel game that follows the journey of a young witch through a dreadful forest to
+                                find her little lost critters.
+                            </p>
+                        </div>
+                    </div>
+
+                     <div class="card">
+                        <img src="game2.webp">
+                        <div class="card-text">
+                            <h2>Midday Forest</h2>
+                            <p>
+                                A 2D pixel game that follows the journey of a young nymph and her familiar through a peaceful forest 
+                                to find her witch friend. A sequel to the first game.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="game3.webp">
+                        <div class="card-text">
+                            <h2>Fame & Fortune</h2>
+                            <p>
+                                A 2D pixel game that follows the journey of an aspiring singer. 
+                                Similar to the mechanics of FNF.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contact" class="contact-sec">
+                <h2>Contact Form</h2>
+                <div class="group">
+                    <div class="text">
+                        Have a story in mind to tell? Reach out to me to get your idea engineered into
+                        an immersive, interactable world. 
+                    </div>
+                    <form>
+                        <label for="name" required>Name</label>
+                        <input type="text" id="name">
+
+                        <label for="email" required>Email</label>
+                        <input type="email" id="email">
+
+                        <label for="msg" required>Message</label>
+                        <textarea id="msg" cols="30" rows="10"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="email">Email: rr.anwar385@gmail.com</div>
+            <div class="cpyr">©2026 My Portfolio</div>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+ </html>

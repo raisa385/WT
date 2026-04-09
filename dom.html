@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List DOM Practice</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <h1>Student List</h1>
+ 
+    <!-- Student Form -->
+    <form id="student-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" placeholder="Enter student name">
+
+        <label for="student-id">ID:</label>
+        <input type="text" id="student-id" placeholder="Enter student ID">
+        <button id="add-button" type="submit">Add Student</button>
+
+        <input type="text" id="search-student" placeholder="enter name or ID to search...">
+
+    </form>
+
+ 
+    <!-- Student List -->
+    <ul id="student-list">
+        <!-- New students will be added here -->
+    </ul>
+
+    <p id="student-count">Total students: 0</p>
+    <p id="attendance-count">Present: 0, Absent: 0</p>
+ 
+    <!-- JS file -->
+    <script src="dom.js"></script>
+</body>
+</html>

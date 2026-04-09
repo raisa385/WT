@@ -1,0 +1,276 @@
+/*[1,2]*/
+:root {
+    --text: black;
+    --link: rgb(213, 51, 51);
+    --bg: white;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: var(--bg);*/
+    background-image: linear-gradient(to bottom,white, rgb(209, 248, 255),white);
+    max-width: 1400px;
+    margin:0 auto; /*centers whole page when zoomed out a lot*/
+}
+
+a{
+    color: var(--link);
+    text-decoration: none;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 0 50px;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 250px;
+}
+
+.home .text{
+    font-size: 40px;
+    align-items: center;
+}
+.home .text h2{
+    flex:4;
+}
+.home .text .links{
+    margin-top: 25px;
+}
+.home .profile{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.home .profile img{
+    width: 300px;
+    border-radius: 50%;
+}
+.home .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link);
+    border-radius: 5px;
+    margin-right:10px;
+    margin-bottom:10px; 
+    transition: 0.1s;
+}
+
+.home .text .links a:hover{
+    color: var(--text);
+    border: 2px solid var(--text);  
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  margin-bottom:50px;
+}
+
+nav .left a{
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text);
+    margin: 0 10px;
+}
+
+nav .right a:last-child{
+    color: var(--bg);
+    background-color: var(--text);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*Media query for pc-phone view*/
+@media (max-width: 850px){ /*for hero sec*/
+    .home .text h2 {font-size:35px;}
+}
+@media (max-width: 740px){ /*for hero sec smaller (phone view?)*/
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home .profile img{
+        width: 300px;
+    }
+
+    .contact-sec .group{
+        flex-direction:column;
+    }
+}
+@media (max-width: 600px){
+    nav{/*for nav sec*/
+        padding:0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color: var(--text);
+        background:transparent;
+        padding:0;
+    }
+    nav .right a span{
+        display:none;
+    }
+    /*for hero sec*/
+    .home{padding:0 20px;}
+    .home .text h2{font-size: 30px;}
+}
+
+.contact-sec{
+    padding:0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-sec h2{
+   font-size: 35px;
+}
+
+.contact-sec .group{
+    display:flex;
+    gap:50px;
+}
+
+.contact-sec .group .text{
+    flex:3;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.contact-sec .group form{
+    flex:3;
+    display:flex;
+    flex-direction: column;
+}
+.contact-sec .group form input, .contact-sec .group form textarea{
+    font-family: sans-serif;
+    border: 2px solid var(--link);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background-color: white;
+    padding:10px;
+    margin-bottom: 15px;
+    outline:none;
+    resize:none;
+}
+.contact-sec .group form button{
+    font-size:16px;
+    font-family: Verdana;
+    color:white;
+    background-color: var(--link);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition:0.1s;
+}
+.contact-sec .group form button:hover{
+    filter: brightness(0.9);
+}
+
+footer{
+    margin-top:100px;
+    padding: 30px 10px;
+    background-color: var(--link);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/*project cards [3]*/
+.project h2{
+    font-size:50px;
+    display:flex;
+    justify-content: left;
+    font-style:italic;
+}
+.project h1{
+   font-size:50px;
+    display:flex;
+    justify-content: left;
+    font-style:italic; 
+    margin-left:100px;
+    margin-bottom:20px;
+}
+#project-subtext{
+    font-size: 35px;
+    display:flex;
+    justify-content: left;
+    margin-left:100px;
+}
+.container{
+    width:90%;
+    margin: 50px auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 8px;
+    flex:1;
+    min-width:200px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition:0.1;
+
+}
+.card:hover{
+    background-color: rgb(248, 211, 211);
+    transform:translateY(-5px); /*to make card look like it floats :)*/
+}
+.card img{
+    width:100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom:10px;
+}
+.card .card-text{
+    padding:15px;
+}
+.card .card-text h2{
+    font-size: 26px;
+    margin-bottom:10px;
+    color:var(--link);
+}
+.card .card-text p{
+    font-size: 17px;
+    margin-bottom:10px;
+    color:var(--text);
+}
+/*annoying pop up for msg sent [5]*/
+.p_card{
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(147, 217, 255, 0.851);
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    max-Width:300px;
+    animation:ease-in 0.5s ease-out;
+}
